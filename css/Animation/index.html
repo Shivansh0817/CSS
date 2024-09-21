@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box ;
+        }
+        .container{
+            border: 2px solid black;
+            width: 100vw; height: 100vh;
+            background-color: rgb(196, 203, 255);
+        }
+        #box{
+            width: 100px;
+            height: 30px;
+            background-color: brown;
+            border: 2px solid black;
+            margin: 10px;
+            position: relative;
+            animation-name: rightmovement;
+            animation-duration: 5sec;
+            animation-iteration-count: 2;
+            animation-delay: 2s;
+
+
+            @keyframes rightmovement {
+                from{
+
+                    top=0;
+                    left=0;
+
+                }
+                to{
+
+                    top: 0;
+                    left=1200px;
+                }
+                
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box"></div>
+    </div>
+</body>
+</html>
